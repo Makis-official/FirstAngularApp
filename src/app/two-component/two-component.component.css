@@ -1,0 +1,17 @@
+button {
+    padding: 10px 20px;
+    color: white;
+    background-color:blueviolet;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 50px;
+}
+
+div {
+    display: flex;
+}
+
+p {
+    font-size: 20px;
+}
