@@ -1,0 +1,19 @@
+.date{
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto;
+}
+
+.person
+{
+    max-width: 1000px;
+    margin: auto;
+
+    width: 300px;
+    background-color: #337679;
+    color:aliceblue;
+    padding: 1px 15px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
