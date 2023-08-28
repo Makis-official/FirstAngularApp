@@ -1,0 +1,8 @@
+
+<div>
+    <button *ngFor="let person of Persons" routerLink="/item/{{person.id}}">{{person.name}}</button>
+</div>
+
+
+
+<router-outlet></router-outlet>
