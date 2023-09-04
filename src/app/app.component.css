@@ -1,0 +1,49 @@
+.btn
+{
+    margin-bottom: 10px;
+}
+
+.li_but{
+    width: 700px;
+    margin: 20px auto;
+}
+
+.tab-container {
+    padding-top: 150px;
+}
+
+h1{
+    margin-bottom: 50px;
+    font-size: 80px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px;
+}
+
+h2{
+    font-size: 40px;
+    text-align: left;
+    padding: 40px;
+    width: 840px;
+}
+
+.down-div{
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn{
+    width: 840px;
+}
+
+.school_but{
+    width: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+.not{
+    font-size: 50px;
+}
