@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ResponseService } from './service/response.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'FirstAngularApp';
+
+  constructor(public RespServ: ResponseService) {}
 }

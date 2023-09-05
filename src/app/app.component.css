@@ -1,0 +1,12 @@
+.cards{
+    width: 100%;
+    margin: 80px auto 0;
+    display: flex;
+    column-gap: 50px;
+}
+
+.one_card{
+    background-color: #088b81;
+    color: aliceblue;
+    padding: 0 10px;
+}
