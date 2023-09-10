@@ -1,0 +1,7 @@
+.all_inf{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 100px;
+    margin: 100px auto 0;
+    max-width: 75%;
+}
