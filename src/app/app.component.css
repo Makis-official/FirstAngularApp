@@ -1,0 +1,18 @@
+main{
+    max-width: 70%;
+    margin: 100px auto 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn{
+    padding: 20px;
+    font-size: 18px;
+}
+
+.one{
+    max-width: 70%;
+    margin: 100px auto 0;
+    display: flex;
+    justify-content: space-between;
+}
