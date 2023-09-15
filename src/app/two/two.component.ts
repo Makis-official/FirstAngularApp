@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AllServerService } from '../all-server.service';
-import { ActivatedRoute} from '@angular/router';
-import { onePost } from '../one-post.resolver';
+import { Post } from '../post';
+
 
 @Component({
   selector: 'app-two',
@@ -9,11 +9,19 @@ import { onePost } from '../one-post.resolver';
   styleUrls: ['./two.component.css']
 })
 export class TwoComponent implements OnInit {
-  constructor(public activatedRoute: ActivatedRoute){}
+  constructor(public allServerService: AllServerService){}
 
+
+  user = <Post>{};
 
   ngOnInit(): void {
-    console.log(this.activatedRoute.snapshot.data);
+
+    this.allServerService.getPostWithResolve().subscribe({
+      next: (value: Post) => {
+        this.user = value;
+        console.log(this.user);
+      }
+    })
   }
 
 

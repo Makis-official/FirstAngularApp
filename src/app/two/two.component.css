@@ -1,0 +1,15 @@
+main{
+    max-width: 70%;
+    margin: 0 auto 0;
+}
+
+.title{
+    margin: 30px auto 40px;
+}
+
+.inf{
+    background-color: #627375;
+    padding: 15px;
+    color: white;
+    border-radius: 8px;
+}

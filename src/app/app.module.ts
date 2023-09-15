@@ -7,10 +7,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TwoComponent } from './two/two.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
-    TwoComponent
+    TwoComponent,
   ],
   imports: [
     BrowserModule,
