@@ -1,0 +1,28 @@
+<div>
+    <div class="id">
+        <p>userId: {{people?.userId}}</p>
+        <p>id: {{people?.id}}</p>
+    </div>
+
+    <h1>{{people?.title}}</h1>
+    <p>{{people?.body}}</p>
+
+    <h2 class="mt-5">Редактирование данных</h2>
+
+    <label style="margin-top: 20px;">body: </label>
+    <textarea [(ngModel)]="people && people.body" value="{{people?.body}}" class="form-control"></textarea>
+    <label>title: </label>
+    <input type="text" [(ngModel)]="people && people.title" value="{{people?.title}}" class="form-control">
+    <label>id: </label>
+    <input type="text" [(ngModel)]="people && people.id" value="{{people?.id}}" class="form-control">
+    <label>userId: </label>
+    <input type="text" [(ngModel)]="people && people.userId" value="{{people?.userId}}" class="form-control">
+
+    <button (click)="save()" class="btn btn-dark">Сохранить</button>
+</div>
+
+    
+
+
+
+

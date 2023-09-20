@@ -1,0 +1,12 @@
+
+<main>
+  <div class="cards" *ngFor="let user of users">
+      <p class="id">{{user.id}} </p>
+      <p class="title">{{user.title}} </p>
+      <p>{{user.body}} </p>
+      <a routerLink="{{user.id}}" class="btn btn-light">Редактировать</a>
+      <!--  <p>{{user.userId}} </p>-->
+
+  </div>
+</main>
+

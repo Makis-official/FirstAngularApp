@@ -1,0 +1,30 @@
+main{
+  width: 90%;
+  margin: 100px auto 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 340px);
+  justify-content: space-between;
+}
+
+.cards{
+  width: 300px;
+  background-color: #7575be;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.title{
+  font-size: 25px;
+}
+
+p{
+  color: aliceblue;
+}
+
+.id{
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+}

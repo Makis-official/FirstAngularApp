@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PostsService } from "./posts.service";
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'FirstAngularApp';
+  title = 'app';
+
+  constructor(public serv: PostsService) {}
+
+  admin() {
+    this.serv.role = 'admin';
+  }
+
+  user() {
+    this.serv.role = 'user';
+  }
+
+
 }
