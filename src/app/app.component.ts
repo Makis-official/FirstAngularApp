@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AllServerService } from './all-server.service';
+import { AllServerService } from './service/all-server.service';
 import { HttpErrorResponse } from '@angular/common/http';
 
 

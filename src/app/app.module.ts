@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TwoComponent } from './two/two.component';
+import { AllServerService } from './service/all-server.service';
 
 
 @NgModule({
@@ -19,7 +20,7 @@ import { TwoComponent } from './two/two.component';
     HttpClientModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [AllServerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

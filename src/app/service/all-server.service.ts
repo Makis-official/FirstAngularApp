@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpParams } from '@angular/common/http';
-import { Post } from './post';
+import { Post } from '../interface/post';
 
 @Injectable({
   providedIn: 'root'
@@ -9,32 +9,32 @@ export class AllServerService {
 
   constructor(private http: HttpClient) { }
 
-  getAllPosts(){
+  getAllPosts() {
     return this.http.get('https://jsonplaceholder.typicode.com/posts');
   }
 
-  getOneComments(){
+  getOneComments() {
     const parametr = new HttpParams().set('postId', '1');
     return this.http.get('https://jsonplaceholder.typicode.com/comments', { params: parametr });
   }
 
-  postBody(){
+  postBody() {
     return this.http.post('https://jsonplaceholder.typicode.com/posts', {'body': null});
   }
 
-  getOnePost(){
+  getOnePost() {
     return this.http.get('https://jsonplaceholder.typicode.com/post');
   }
 
-  headPosts(){
+  headPosts() {
     return this.http.get('https://jsonplaceholder.typicode.com/posts', {headers: {'X-Test': '1'}, responseType: 'text'});
   }
 
-  deleteOnePost(){
+  deleteOnePost() {
     return this.http.delete('https://jsonplaceholder.typicode.com/posts/1');
   }
 
-  getPostWithResolve(){
+  getPostWithResolve() {
     return this.http.get<Post>('https://jsonplaceholder.typicode.com/posts/1');
   }
 

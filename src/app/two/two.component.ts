@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { AllServerService } from '../all-server.service';
-import { Post } from '../post';
+import { AllServerService } from '../service/all-server.service';
+import { Post } from '../interface/post';
 
 
 @Component({
