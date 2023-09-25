@@ -23,8 +23,7 @@ const routes: Routes = [
     path: 'posts/:id',
     component: OnePostComponent,
     canActivate: [roleGuard],
-  }
-
+  },
 
 ];
 

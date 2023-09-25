@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PostsService } from "./posts.service";
+import { PostsService } from "./service/posts.service";
 
 @Component({
   selector: 'app-root',
@@ -13,11 +13,10 @@ export class AppComponent {
 
   admin() {
     this.serv.role = 'admin';
-  }
+  };
 
   user() {
     this.serv.role = 'user';
-  }
-
+  };
 
 }

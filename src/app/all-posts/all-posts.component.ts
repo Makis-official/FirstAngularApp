@@ -1,6 +1,6 @@
 import { Component,  OnInit} from '@angular/core';
-import { PostsService } from "../posts.service";
-import { Person } from "../person";
+import { PostsService } from "../service/posts.service";
+import { Person } from "../interface/person";
 
 @Component({
   selector: 'app-all-posts',
@@ -20,5 +20,6 @@ export class AllPostsComponent implements OnInit{
           this.serv.person = this.users;
         }
       });
-  }
+  };
+
 }

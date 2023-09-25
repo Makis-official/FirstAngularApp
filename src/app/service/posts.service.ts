@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
-import { Person } from "./person";
+import { Person } from "../interface/person";
 
 @Injectable({
   providedIn: 'root'
@@ -14,5 +14,6 @@ export class PostsService {
 
   getAllUser() {
     return this.http.get<Person[]>('https://jsonplaceholder.typicode.com/posts');
-  }
+  };
+  
 }

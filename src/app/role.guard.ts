@@ -7,7 +7,7 @@ import {
   UrlTree,
 } from '@angular/router';
 import { Observable } from "rxjs";
-import { PostsService } from "./posts.service";
+import { PostsService } from "./service/posts.service";
 
 
 @Injectable()
@@ -28,5 +28,6 @@ export class roleGuard implements CanActivate {
     } else {
       return this.router.navigateByUrl('error');
     }
-  }
+  };
+
 }

@@ -1,6 +1,6 @@
 import { Component, OnInit} from '@angular/core';
-import { PostsService } from "../posts.service";
-import { Person } from "../person";
+import { PostsService } from "../service/posts.service";
+import { Person } from "../interface/person";
 import { ActivatedRoute } from '@angular/router';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
@@ -20,10 +20,11 @@ export class OnePostComponent implements OnInit{
     // console.log(id);
     this.people =  this.serv.person.find(x => x.id == id);
     // console.log(this.people);
-  }
+  };
 
   save() {
     console.log(this.people);
     Notify.success('Новые данные сохранены и выведены в консоль!');
-  }
+  };
+  
 }

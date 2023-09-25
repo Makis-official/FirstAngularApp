@@ -7,7 +7,7 @@ import { AllPostsComponent } from './all-posts/all-posts.component';
 import { OnePostComponent } from './one-post/one-post.component';
 import { ErrorComponent } from './error/error.component';
 import { HttpClientModule } from "@angular/common/http";
-import { PostsService } from "./posts.service";
+import { PostsService } from "./service/posts.service";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MainComponent } from './main/main.component';
 import { roleGuard } from "./role.guard";
