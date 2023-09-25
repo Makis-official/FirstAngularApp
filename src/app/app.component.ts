@@ -12,16 +12,16 @@ export class AppComponent {
   books: Book[] = [
     {
       name_book: 'Идиот',
-      author: 'Достоевский'
+      author: 'Достоевский',
     },
     {
       name_book: "Щоколад",
-      author: "Харрис"
+      author: "Харрис",
     },
     {
       name_book: "Ревиззор",
-      author: "Гоголь"
-    }
+      author: "Гоголь",
+    },
   ];
 
   create_Books = {
