@@ -19,14 +19,12 @@ export class AppComponent {
   private viewRef!: ViewContainerRef;
   private componentRef!: ComponentRef<TableComponent>;
 
-
-
-  add(){
+  add() {
     this.viewRef.clear();
     this.componentRef = this.viewRef.createComponent(TableComponent);
-  }
+  };
 
-  delete_table(){
+  delete_table() {
     this.viewRef.clear();
-  }
+  };
 }
