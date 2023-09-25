@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { DataService } from './data.service';
-import { Post } from './post';
+import { DataService } from './service/data.service';
+import { Post } from './interface/post';
 
 
 @Component({
@@ -8,11 +8,13 @@ import { Post } from './post';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent implements OnInit{
+  title = 'FirstAngularApp';
+
   users: Post[] = [];
 
-  constructor(public dataService:DataService){
-  }
+  constructor(public dataService:DataService) {}
 
   ngOnInit(): void {
     this.dataService.todos().subscribe({
@@ -20,10 +22,7 @@ export class AppComponent implements OnInit{
         this.users = resp;
         console.log(this.users);
       }
-    });
+    }); 
+  };
 
-    
-  }
-
- title = 'FirstAngularApp';
 }
