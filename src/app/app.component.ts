@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-
 import {Subscription, interval, map} from 'rxjs';
 
 @Component({
@@ -19,8 +18,6 @@ export class AppComponent {
   enableStopButton = false;
   enableRandStopButton = false;
 
-  constructor() {}
-
   enableInterval() {
     const intervalStreaming = interval(2000);
 
@@ -29,19 +26,16 @@ export class AppComponent {
       console.log(value);
     });
 
-
-    this.intervalRundSub$ = intervalStreaming.pipe(map(() => `Random Value: ${Math.floor(Math.random() * (100)) + 1}`)).subscribe((value)=> {
+    this.intervalRundSub$ = intervalStreaming.pipe(map(() => `Random Value: ${Math.floor(Math.random() * (100)) + 1}`)).subscribe((value) => {
       this.randMas.push(value);
       console.log(value);
-    }
-      );
+    });
 
     this.enableStopButton = true;
     this.enableRandStopButton = true;
   };
 
-
-    stopSubs() {
+  stopSubs() {
     this.intervalSub$.unsubscribe();
     this.enableStopButton = false;
   };
