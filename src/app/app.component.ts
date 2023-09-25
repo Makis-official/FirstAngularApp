@@ -21,7 +21,7 @@ export class AppComponent {
 
   constructor() {}
 
-  enableInterval(){
+  enableInterval() {
     const intervalStreaming = interval(2000);
 
     this.intervalSub$ = intervalStreaming.subscribe((value) => {
