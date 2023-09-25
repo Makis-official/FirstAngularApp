@@ -5,9 +5,6 @@ import { OneEl } from '../interface/one-el';
   providedIn: 'root'
 })
 export class ResponseService {
-  
-
-  constructor() { }
 
   one: OneEl[] = [
     {
@@ -27,7 +24,7 @@ export class ResponseService {
       id: 3,
       title: "fugiat veniam minus",
       completed: false
-    },
-  ]
+    }
+  ];
   
 }
