@@ -12,11 +12,13 @@ import { AllServerService } from './service/all-server.service';
 })
 
 export class onePost implements Resolve<object> {
+
   constructor(private allServerService: AllServerService) {}
+  
   resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<object> 
   {
     console.log('Resolve');
     return this.allServerService.getPostWithResolve();
-  }
+  };
 }
 

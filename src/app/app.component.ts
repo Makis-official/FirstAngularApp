@@ -11,28 +11,26 @@ import { HttpErrorResponse } from '@angular/common/http';
 export class AppComponent {
   title = 'FirstAngularApp';
 
-  constructor(private allPost: AllServerService) {
-
-  }
+  constructor(private allPost: AllServerService) { }
 
 
   getPosts() {
     this.allPost.getAllPosts().subscribe({
       next: (value) => {console.log(value)}
-    })
+    });
   };
 
   getComments() {
     this.allPost.getOneComments().subscribe({
       next: (value) => {console.log(value)}
-    })
-  }
+    });
+  };
 
   postSub() {
     this.allPost.postBody().subscribe({
       next: (value) => {console.log(value)}
-    })
-  }
+    });
+  };
 
   onePost() {
     this.allPost.getOnePost().subscribe({
@@ -43,19 +41,19 @@ export class AppComponent {
           console.log('Error server');
         }
       }
-    })
-  }
+    });
+  };
 
   postWithHeader() {
     this.allPost.headPosts().subscribe({
       next: (value) => {console.log(value)}
-    })
-  }
+    });
+  };
 
   DeletePost() {
     this.allPost.deleteOnePost().subscribe({
       next: (value) => {console.log(value)}
-    })
-  }
+    });
+  };
 
 }

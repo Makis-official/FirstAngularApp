@@ -21,8 +21,8 @@ export class TwoComponent implements OnInit {
         this.user = value;
         console.log(this.user);
       }
-    })
-  }
+    });
+  };
 
 
 }
