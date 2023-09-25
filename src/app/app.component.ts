@@ -1,9 +1,5 @@
 import { Component } from '@angular/core';
-
-interface Books {
-  name_book: string | null;
-  author: string | null;
-}
+import { Book } from './interface/book';
 
 @Component({
   selector: 'app-root',
@@ -13,7 +9,7 @@ interface Books {
 
 export class AppComponent {
 
-  books: Books[] = [
+  books: Book[] = [
     {
       name_book: 'Идиот',
       author: 'Достоевский'
