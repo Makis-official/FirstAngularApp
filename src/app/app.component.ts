@@ -32,7 +32,7 @@ export class AppComponent {
   addBook() {
     this.books.push({
       name_book: this.create_Books.name_book,
-      author: this.create_Books.author
+      author: this.create_Books.author,
     });
   };
 
