@@ -30,7 +30,7 @@ export class AppComponent implements OnInit {
 
   active(id: number) {
     this.store.dispatch(new Completed(id));
-  }
+  };
 
   add() {
 
