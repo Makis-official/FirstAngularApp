@@ -1,0 +1,41 @@
+.del{
+    margin-top: 50px;
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+}
+
+.inf{
+    display: flex;
+    column-gap: 40px;
+}
+
+.value{
+    margin: auto 0;
+}
+
+.completed{
+    text-decoration: line-through
+}
+
+main{
+    width: 600px;
+    margin: 100px auto 0;
+}
+
+.in{
+    width: 250px;
+    height: 40px;
+}
+
+h1{
+    text-align: center;
+}
+
+p{
+    font-size: 24px;
+}
+
+.adding{
+    display: flex;
+}
