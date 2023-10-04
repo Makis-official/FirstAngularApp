@@ -11,7 +11,8 @@ import { Observable } from 'rxjs';
 export class LoggerInterceptor implements HttpInterceptor {
 
   intercept(request: HttpRequest<unknown>, next: HttpHandler): Observable<HttpEvent<unknown>> {
-    request = request.clone({params: request.params.set('id', '4')});
+    request = request.clone({url: request.url + '/4' })
+    // request = request.clone({params: request.params.set('id', '4')});
     console.log(request);
     return next.handle(request);
   };

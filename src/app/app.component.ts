@@ -12,13 +12,13 @@ import { Post } from './interface/post';
 export class AppComponent implements OnInit{
   title = 'FirstAngularApp';
 
-  users: Post[] = [];
+  users= <Post>{};
 
   constructor(public dataService:DataService) {}
 
   ngOnInit(): void {
     this.dataService.todos().subscribe({
-      next: (resp: Post[]) => {
+      next: (resp: Post) => {
         this.users = resp;
         console.log(this.users);
       }

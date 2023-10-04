@@ -11,7 +11,7 @@ export class DataService {
   constructor(private http: HttpClient) { }
 
   todos() {
-    return this.http.get<Post[]>('https://jsonplaceholder.typicode.com/todos');
+    return this.http.get<Post>('https://jsonplaceholder.typicode.com/todos');
   };
 
 }
