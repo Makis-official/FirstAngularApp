@@ -17,6 +17,7 @@ export class AppComponent {
 
   enableStopButton = false;
   enableRandStopButton = false;
+  startButton = true;
 
   enableInterval() {
     const intervalStreaming = interval(2000);
@@ -33,6 +34,7 @@ export class AppComponent {
 
     this.enableStopButton = true;
     this.enableRandStopButton = true;
+    this.startButton = false;
   };
 
   stopSubs() {

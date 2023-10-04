@@ -1,7 +1,10 @@
 
-<div class="text-center mt-4">
-<button class="btn btn-dark  w-75" (click)="enableInterval()">Запустить два потока</button> 
-</div>
+<ng-container *ngIf="startButton || !enableStopButton && !enableRandStopButton">
+    <div class="text-center mt-4">
+        <button class="btn btn-dark  w-75" (click)="enableInterval()">Запустить два потока</button> 
+    </div>
+</ng-container>
+
 
 
 <div class="all_inf">
